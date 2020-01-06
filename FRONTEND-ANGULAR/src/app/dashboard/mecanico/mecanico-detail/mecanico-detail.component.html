@@ -1,0 +1,126 @@
+<h2 mat-dialog-title>{{ 'all.detail' | translate }}</h2>
+
+<mat-dialog-content>
+  <mat-list>
+
+    <mat-list-item class="detail-item">
+      <div class="w-100" fxLayout="row" fxLayout.lt-md="column">
+        <div fxFlex>
+          <b>{{ 'object.tipoDocumento' | translate }}</b>:
+        </div>
+        <div fxFlex="60">
+          {{ object.tipoDocumento }}
+        </div>
+      </div>
+    </mat-list-item>
+
+    <mat-list-item class="detail-item">
+      <div class="w-100" fxLayout="row" fxLayout.lt-md="column">
+        <div fxFlex>
+          <b>{{ 'object.documento' | translate }}</b>:
+        </div>
+        <div fxFlex="60">
+          {{ object.documento }}
+        </div>
+      </div>
+    </mat-list-item>
+
+    <mat-list-item class="detail-item">
+      <div class="w-100" fxLayout="row" fxLayout.lt-md="column">
+        <div fxFlex>
+          <b>{{ 'object.primerNombre' | translate }}</b>:
+        </div>
+        <div fxFlex="60">
+          {{ object.primerNombre }}
+        </div>
+      </div>
+    </mat-list-item>
+
+    <mat-list-item class="detail-item">
+      <div class="w-100" fxLayout="row" fxLayout.lt-md="column">
+        <div fxFlex>
+          <b>{{ 'object.segundoNombre' | translate }}</b>:
+        </div>
+        <div fxFlex="60">
+          {{ object.segundoNombre }}
+        </div>
+      </div>
+    </mat-list-item>
+
+    <mat-list-item class="detail-item">
+      <div class="w-100" fxLayout="row" fxLayout.lt-md="column">
+        <div fxFlex>
+          <b>{{ 'object.primerApellido' | translate }}</b>:
+        </div>
+        <div fxFlex="60">
+          {{ object.primerApellido }}
+        </div>
+      </div>
+    </mat-list-item>
+
+    <mat-list-item class="detail-item">
+      <div class="w-100" fxLayout="row" fxLayout.lt-md="column">
+        <div fxFlex>
+          <b>{{ 'object.segundoApellido' | translate }}</b>:
+        </div>
+        <div fxFlex="60">
+          {{ object.segundoApellido }}
+        </div>
+      </div>
+    </mat-list-item>
+
+    <mat-list-item class="detail-item">
+      <div class="w-100" fxLayout="row" fxLayout.lt-md="column">
+        <div fxFlex>
+          <b>{{ 'object.celular' | translate }}</b>:
+        </div>
+        <div fxFlex="60">
+          {{ object.celular }}
+        </div>
+      </div>
+    </mat-list-item>
+
+    <mat-list-item class="detail-item">
+      <div class="w-100" fxLayout="row" fxLayout.lt-md="column">
+        <div fxFlex>
+          <b>{{ 'object.direccion' | translate }}</b>:
+        </div>
+        <div fxFlex="60">
+          {{ object.direccion }}
+        </div>
+      </div>
+    </mat-list-item>
+
+    <mat-list-item class="detail-item">
+      <div class="w-100" fxLayout="row" fxLayout.lt-md="column">
+        <div fxFlex>
+          <b>{{ 'object.email' | translate }}</b>:
+        </div>
+        <div fxFlex="60">
+          {{ object.email }}
+        </div>
+      </div>
+    </mat-list-item>
+
+    <mat-list-item class="detail-item">
+      <div class="w-100" fxLayout="row" fxLayout.lt-md="column">
+        <div fxFlex>
+          <b>{{ 'object.estado' | translate }}</b>:
+        </div>
+        <div fxFlex="60">
+          {{ object.estado }}
+        </div>
+      </div>
+    </mat-list-item>
+  </mat-list>
+
+
+</mat-dialog-content>
+
+<mat-divider class="mat-divider mat-divider-horizontal"></mat-divider>
+
+<mat-dialog-actions align="end">
+  <button mat-button color="warn" (click)="close()">
+    <mat-icon class="m-1">close</mat-icon> {{ 'all.close' | translate }}
+  </button>
+</mat-dialog-actions>

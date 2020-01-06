@@ -1,0 +1,7 @@
+{
+    "form": {
+        "error": {
+            "required": "El campo no puede estar vacío"
+        } 
+    }
+}

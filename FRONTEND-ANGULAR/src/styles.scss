@@ -1,0 +1,74 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+$white: #fff;
+$black: #000;
+$red: #e60000;
+$grey: #ccc;
+$blue: #105aa7;
+$green: #005800;
+$orange: #fca130;
+
+.background-transparen {
+  background-color: transparent;
+}
+
+.white {
+  color: $white;
+}
+
+.black {
+  color: $black;
+}
+
+.red {
+  color: $red;
+}
+
+.grey {
+  color: $grey;
+}
+
+.blue {
+  color: $blue;
+}
+
+.green {
+  color: $green;
+}
+
+.element-hover-pointer {
+  cursor: pointer;
+}
+
+.success-snackbar {
+  background: $green !important;
+  color: $white !important;
+}
+.mat-simple-snackbar-action {
+  color: $white !important;
+}
+
+.error-snackbar {
+  background: $red !important;
+  color: $white !important;
+}
+.mat-simple-snackbar-action {
+  color: $white !important;
+}
+
+.warning-snackbar {
+  background: $orange !important;
+  color: $white !important;
+}
+.mat-simple-snackbar-action {
+  color: $white !important;
+}

@@ -1,0 +1,69 @@
+{
+    "all": {
+        "actions": "Acciones",
+        "appName": "Mantenimientos",
+        "cancel": "Cancelar",
+        "clear": "Limpiar",
+        "consult": "Consultar",
+        "confirm": {
+            "title": "Conformar acción",
+            "message": "¿Desea continuar con la acción actual"
+        },
+        "close": "Cerrar",
+        "create": "Crear",
+        "delete": "Eliminar",
+        "detail": "Detalle",
+        "edit": "Editar",
+        "itemsPerPageLabel": "Items por página",
+        "new": "Crear nuevo",
+        "not": "No",
+        "notData": "No hay datos",
+        "save": "guardar",
+        "select": "Seleccionar",
+        "search": "Buscar",
+        "yes": "Si"    
+    },
+    "form": {
+        "estado": {
+            "activo": "Activo",
+            "inactivo": "Inactivo"
+        },
+        "error": {
+            "email": "Formato de correo electrónico invalido.",
+            "maxElement": "El campo solo puede tener un máximo de {{ maximo }} caracteres",
+            "required": "Campo requerido." 
+        },
+        "tipoDocumento": {
+            "cc": "Cédula de ciudadanía",
+            "ce": "Cédula de extranjeria",
+            "ps": "Pasaporte"
+        }
+    },
+    "mantenimiento": {
+      "title": "Mantenimiento"  
+    },
+    "mecanico": {
+        "title": "Mecánico"
+    },
+    "object": {
+        "celular": "Celular",
+        "codigo": "Código",
+        "direccion": "Dirección",
+        "documento": "Documento",
+        "email": "Correo electrónico",
+        "estado": "Estado",
+        "fecha": "Fecha",
+        "mecanico": "Mecánico",
+        "primerApellido": "Primer apellido",
+        "primerNombre": "Primer nombre",
+        "segundoApellido": "Segundo apellido",
+        "segundoNombre": "Segundo nombre",
+        "tipoDocumento": "Tipo de documento"
+    },
+    "user": {
+        "age": "Edad",
+        "email": "Correo electrónico",
+        "firstName": "Nombres",
+        "lastName": "Apellidos"
+    }
+}

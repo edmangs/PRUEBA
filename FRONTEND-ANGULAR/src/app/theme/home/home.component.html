@@ -1,0 +1,19 @@
+<div class="bg-image"></div>
+
+<div class="container" fxLayout="raw" fxFlexFill fxLayoutAlign="center center">
+  <mat-card fxFlex="80" fxFlex.xs="90" class="background-transparen">
+    <div>
+      <p fxLayoutAlign="center center">
+        {{ 'home.message' | translate }}.
+      </p>
+      <p fxLayoutAlign="center center">
+        {{ 'home.descripcion' | translate }}.
+      </p>
+    </div>
+    <div fxLayoutAlign="center center">
+      <a mat-raised-button color="primary" routerLink="/dashboard/home">
+        {{ 'login.start' | translate }}
+      </a>
+    </div>
+  </mat-card>
+</div>

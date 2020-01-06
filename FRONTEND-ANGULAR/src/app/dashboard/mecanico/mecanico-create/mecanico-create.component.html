@@ -1,0 +1,159 @@
+<div fxLayout="column">
+  <div class="flex-p">
+    <mat-card class="p-0 mat-card">
+      <mat-card-header fxLayoutAlign="center">
+        <mat-card-subtitle>
+          <h2>{{ 'all.create' | translate }}</h2>
+        </mat-card-subtitle>
+      </mat-card-header>
+
+      <mat-card-content [formGroup]="form">
+        <div fxLayout fxLayout.xs="column" fxLayoutGap="20px" fxLayoutGap.xs="0">
+          <div fxFlex>
+            <mat-form-field fxFlex="100%">
+              <mat-select formControlName="tipoDocumento" [placeholder]="'object.tipoDocumento' | translate" 
+                [(ngModel)]="object.tipoDocumento" required >
+                <mat-option>-- {{ 'all.select' | translate }} --</mat-option>
+                <mat-option *ngFor="let tipoDocumento of tipoDocumentos" [value]="tipoDocumento.value">
+                  {{ tipoDocumento.name | translate }}
+                </mat-option>
+              </mat-select>
+              <mat-error *ngIf="form.get('tipoDocumento').hasError('required')">
+                {{ 'form.error.required' | translate }}
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div fxFlex>
+            <mat-form-field fxFlex="100%">
+              <input matInput type="number" [placeholder]="'object.documento' | translate" formControlName="documento"
+                [(ngModel)]="object.documento" required>
+              <mat-error *ngIf="form.get('documento').hasError('required')">
+                {{ 'form.error.required' | translate }}
+              </mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+
+        <div fxLayout fxLayout.xs="column" fxLayoutGap="20px" fxLayoutGap.xs="0">
+          <div fxFlex>
+            <mat-form-field fxFlex="100%">
+              <input matInput [placeholder]="'object.primerNombre' | translate" formControlName="primerNombre"
+                [(ngModel)]="object.primerNombre" required>
+              <mat-error *ngIf="form.get('primerNombre').hasError('required')">
+                {{ 'form.error.required' | translate }}
+              </mat-error>
+              <mat-error *ngIf="form.get('primerNombre').hasError('maxlength')">
+                {{ 'form.error.maxElement' | translate : {maximo: form.get('primerNombre')?.getError('maxlength').requiredLength} }}
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div fxFlex>
+            <mat-form-field fxFlex="100%">
+              <input matInput [placeholder]="'object.segundoNombre' | translate" formControlName="segundoNombre"
+                [(ngModel)]="object.segundoNombre">
+              <mat-error *ngIf="form.get('segundoNombre').hasError('required')">
+                {{ 'form.error.required' | translate }}
+              </mat-error>
+              <mat-error *ngIf="form.get('segundoNombre').hasError('maxlength')">
+                {{ 'form.error.maxElement' | translate : {maximo: form.get('segundoNombre')?.getError('maxlength').requiredLength} }}
+              </mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+
+        <div fxLayout fxLayout.xs="column" fxLayoutGap="20px" fxLayoutGap.xs="0">
+          <div fxFlex>
+            <mat-form-field fxFlex="100%">
+              <input matInput [placeholder]="'object.primerApellido' | translate" formControlName="primerApellido"
+                [(ngModel)]="object.primerApellido" required>
+              <mat-error *ngIf="form.get('primerApellido').hasError('required')">
+                {{ 'form.error.required' | translate }}
+              </mat-error>
+              <mat-error *ngIf="form.get('primerApellido').hasError('maxlength')">
+                {{ 'form.error.maxElement' | translate : {maximo: form.get('primerApellido')?.getError('maxlength').requiredLength} }}
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div fxFlex>
+            <mat-form-field fxFlex="100%">
+              <input matInput [placeholder]="'object.segundoApellido' | translate" formControlName="segundoApellido"
+                [(ngModel)]="object.segundoApellido">
+              <mat-error *ngIf="form.get('segundoApellido').hasError('required')">
+                {{ 'form.error.required' | translate }}
+              </mat-error>
+              <mat-error *ngIf="form.get('segundoApellido').hasError('maxlength')">
+                {{ 'form.error.maxElement' | translate : {maximo: form.get('segundoApellido')?.getError('maxlength').requiredLength} }}
+              </mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+
+        <div fxLayout fxLayout.xs="column" fxLayoutGap="20px" fxLayoutGap.xs="0">
+          <div fxFlex>
+            <mat-form-field fxFlex="100%">
+              <input matInput type="number" [placeholder]="'object.celular' | translate" formControlName="celular"
+                [(ngModel)]="object.celular" required>
+              <mat-error *ngIf="form.get('celular').hasError('required')">
+                {{ 'form.error.required' | translate }}
+              </mat-error>
+              <mat-error *ngIf="form.get('celular').hasError('maxlength')">
+                {{ 'form.error.maxElement' | translate : {maximo: form.get('celular')?.getError('maxlength').requiredLength} }}
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div fxFlex>
+            <mat-form-field fxFlex="100%">
+              <input matInput [placeholder]="'object.direccion' | translate" formControlName="direccion"
+                [(ngModel)]="object.direccion">
+              <mat-error *ngIf="form.get('direccion').hasError('required')">
+                {{ 'form.error.required' | translate }}
+              </mat-error>
+              <mat-error *ngIf="form.get('direccion').hasError('maxlength')">
+                {{ 'form.error.maxElement' | translate : {maximo: form.get('direccion')?.getError('maxlength').requiredLength} }}
+              </mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+
+        <div fxLayout fxLayout.xs="column" fxLayoutGap="20px" fxLayoutGap.xs="0">
+          <div fxFlex>
+            <mat-form-field fxFlex="100%">
+              <input matInput type="email" [placeholder]="'object.email' | translate" formControlName="email"
+                [(ngModel)]="object.email" required>
+              <mat-error *ngIf="form.get('email').hasError('required')">
+                {{ 'form.error.required' | translate }}
+              </mat-error>
+              <mat-error *ngIf="form.get('email').hasError('email')">
+                {{ 'form.error.email' | translate }}
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div fxFlex>
+            <mat-form-field fxFlex="100%">
+              <mat-select formControlName="estado" [placeholder]="'object.estado' | translate" 
+                [(ngModel)]="object.estado" required>
+                <mat-option>-- {{ 'all.select' | translate }} --</mat-option>
+                <mat-option *ngFor="let estado of estados" [value]="estado.value">
+                  {{ estado.name | translate }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+
+      </mat-card-content>
+
+      <mat-divider class="mat-divider mat-divider-horizontal"></mat-divider>
+
+      <div fxLayout="row" fxLayoutAlign="end" class="flex-p">
+        <button type="button" (click)="onBack()" mat-button class="m-1" color="warn">
+          <mat-icon class="m-1">close</mat-icon> {{ 'all.cancel' | translate }}
+        </button>
+        <button type="button" [disabled]="disableSubmit" class="m-1" mat-raised-button color="primary"
+          (click)="onSubmit()">
+          <mat-icon class="m-1">save</mat-icon> {{ 'all.save' | translate }}
+        </button>
+      </div>
+    </mat-card>
+  </div>
+</div>

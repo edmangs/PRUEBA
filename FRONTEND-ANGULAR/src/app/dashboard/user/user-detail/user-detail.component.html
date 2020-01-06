@@ -1,0 +1,58 @@
+<h2 mat-dialog-title>{{ 'all.detail' | translate }}</h2>
+
+<mat-dialog-content>
+  <mat-list>
+
+    <mat-list-item class="detail-item">
+      <div class="w-100" fxLayout="row" fxLayout.lt-md="column">
+        <div fxFlex>
+          <b>{{ 'user.firstName' | translate }}</b>:
+        </div>
+        <div fxFlex="60">
+          {{ user.firtsName }}
+        </div>
+      </div>
+    </mat-list-item>
+
+    <mat-list-item class="detail-item">
+      <div class="w-100" fxLayout="row" fxLayout.lt-md="column">
+        <div fxFlex>
+          <b>{{ 'user.lastName' | translate }}</b>:
+        </div>
+        <div fxFlex="60">
+          {{ user.lastName }}
+        </div>
+      </div>
+    </mat-list-item>
+
+    <mat-list-item class="detail-item">
+      <div class="w-100" fxLayout="row" fxLayout.lt-md="column">
+        <div fxFlex>
+          <b>{{ 'user.age' | translate }}</b>:
+        </div>
+        <div fxFlex="60">
+          {{ user.age }}
+        </div>
+      </div>
+    </mat-list-item>
+
+    <mat-list-item class="detail-item">
+      <div class="w-100" fxLayout="row" fxLayout.lt-md="column">
+        <div fxFlex>
+          <b>{{ 'user.email' | translate }}</b>:
+        </div>
+        <div fxFlex="60">
+          {{ user.email }}
+        </div>
+      </div>
+    </mat-list-item>
+  </mat-list>
+</mat-dialog-content>
+
+<mat-divider class="mat-divider mat-divider-horizontal"></mat-divider>
+
+<mat-dialog-actions align="end">
+  <button mat-button color="warn" (click)="close()">
+    <mat-icon class="m-1">close</mat-icon> {{ 'all.close' | translate }}
+  </button>
+</mat-dialog-actions>

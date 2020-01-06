@@ -1,0 +1,26 @@
+<mat-drawer-container class="menu-container" autosize color="primary">
+    <mat-drawer #drawer class="menu-sidenav" mode="side" opened>
+      <p>{{ 'all.appName' | translate }}</p>
+      <mat-divider></mat-divider>
+      <a fxLayoutAlign="center center" mat-button 
+        [routerLink]="'/dashboard/mecanico/admin'">
+        {{ 'mecanico.title' | translate }}
+      </a>
+      <mat-divider></mat-divider>
+      <a fxLayoutAlign="center center" mat-button 
+        [routerLink]="'/dashboard/mantenimiento/admin'">
+        {{ 'mantenimiento.title' | translate }}
+      </a>
+    </mat-drawer>
+  
+    <div class="example-sidenav-content">
+      <button type="button" mat-button (click)="drawer.toggle()">
+        <mat-icon class="m-1">menu</mat-icon>
+      </button>
+    </div>
+  
+    <div>
+        <router-outlet></router-outlet>
+    </div>
+  </mat-drawer-container>
+  
