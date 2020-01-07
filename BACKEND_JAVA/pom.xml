@@ -11,6 +11,7 @@
 	<groupId>com.appjava</groupId>
 	<artifactId>BACKEND_JAVA</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 	<name>BACKEND_JAVA</name>
 	<description>APP project for Spring Boot</description>
 

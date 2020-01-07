@@ -1,7 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { MecanicoModel } from '../models/mecanico.model';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
-import { UserDetailComponent } from '../../user/user-detail/user-detail.component';
 
 @Component({
   selector: 'app-mecanico-detail',
@@ -13,7 +12,7 @@ export class MecanicoDetailComponent implements OnInit {
   public object: MecanicoModel;
 
   constructor(
-    private dialogRef: MatDialogRef<UserDetailComponent>,
+    private dialogRef: MatDialogRef<MecanicoDetailComponent>,
     @Inject(MAT_DIALOG_DATA) data: MecanicoModel
   ) {
     this.object = data;
